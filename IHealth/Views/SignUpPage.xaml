@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IHealth.Views.SignUpPage"
+             Title="Signup">
+    <ContentPage.Content>
+        <StackLayout Margin="40">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Name" Margin="0,0,5,0" WidthRequest="120"
+                       VerticalTextAlignment="Center"/>
+                <Editor Keyboard="Text" WidthRequest="120" x:Name="Name"></Editor>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email" Margin="0,0,5,0" WidthRequest="120"
+                       VerticalTextAlignment="Center"/>
+                <Editor Keyboard="Text" WidthRequest="120"  x:Name="Email"></Editor>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Password" Margin="0,0,5,0" WidthRequest="120"
+                       VerticalTextAlignment="Center"/>
+                <Editor Keyboard="Text"  WidthRequest="120"  x:Name="Password"></Editor>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Retype Password " Margin="0,0,5,0" WidthRequest="120"
+                       VerticalTextAlignment="Center"/>
+                <Editor Keyboard="Text" WidthRequest="120"  x:Name="RetypePassword"></Editor>
+            </StackLayout>
+            <Button Text="SignUP" Clicked="SignUpButton" 
+                    HorizontalOptions="Center" Margin="10"></Button>
+            <Label Text="Or Sign Up with" HorizontalOptions="Center"></Label>
+            
+
+        </StackLayout >
+    </ContentPage.Content>
+</ContentPage>
